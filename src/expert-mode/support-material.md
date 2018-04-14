@@ -20,10 +20,17 @@ aspects which determine the optimal support, it is strongly recommended
 to set the threshold to zero and allow Slic3r to determine the support
 required.
 
-Small models, and those with small footprints, can sometimes break or
-detach from the bed. Therefore the `Enforce support` option will cause
-support structures to be printed for the given number of layers,
-regardless of the angle threshold value.
+There are two options which affect the height of supports:
+
+*`Max layer count for supports`: Allows you to pick a layer number
+above which no supports will be generated, or even examined for support.
+0 (the default) disables the limit.
+
+*`Enforce support`: This option is mostly-intended for small models or those
+with small footprints, which can sometimes break or detach from the bed. It
+will cause support structures to be printed for the given number of layers,
+in abundance, ignoring the angle threshold value.  Above the given number
+normal supports resume.
 
 
 The contact Z distance is the amount of space between the lowest level 
