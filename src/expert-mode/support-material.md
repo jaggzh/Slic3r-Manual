@@ -22,11 +22,10 @@ required.
 
 There are two options which affect the height of supports:
 
-*`Max layer count for supports`: Allows you to pick a layer number
+1. `Max layer count for supports`: Allows you to pick a layer number
 above which no supports will be generated, or even examined for support.
 0 (the default) disables the limit.
-
-*`Enforce support`: This option is mostly-intended for small models or those
+1. `Enforce support`: This option is mostly-intended for small models or those
 with small footprints, which can sometimes break or detach from the bed. It
 will cause support structures to be printed for the given number of layers,
 in abundance, ignoring the angle threshold value.  Above the given number
